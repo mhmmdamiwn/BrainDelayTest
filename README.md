@@ -10,8 +10,11 @@ TM1637Display display = TM1637Display(6, 7); // Display pins
 ```
 # Variables
 DELAY: stores the time it took to turn off the LED
+
 Delay[11]: an array for storing the last 10 delay times
+
 counter: a counter for indexing the Delay array
+
 # Setup
 The code sets up the LED and push button pins as output and input respectively, and initializes the push button state. The display is cleared and the random seed is set based on an analog read value:
 ```
@@ -72,24 +75,3 @@ for (int i = 0; i < 50; i++) {
 }
 ```
 The last 10 delay times are stored in an array and displayed on the 4-digit 7-segment display.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
